@@ -101,7 +101,7 @@ def check_input(event):
     key=event.keysym
     if key=="Right":
         move_direction="Right"
-    elif key=="left":
+    elif key=="Left":
         move_direction="Left"
 
 def end_input(event):
