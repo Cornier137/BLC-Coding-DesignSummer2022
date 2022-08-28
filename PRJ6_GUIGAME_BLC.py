@@ -86,14 +86,13 @@ Over', fill='red', font=('Helvetica',30))
 #end game but after the user can see the score
             window.after(2000,end_game_over)
             return
-        
-        for candy in candy_list:
-            if collision(mychar, candy, 30):
-                canvas.delete(candy)
-                candy_list.remove(candy)
-                update_score_level()
-        window.after(100, check_hits)
 
+    for candy in candy_list:
+        if collision(mychar, candy, 30):
+            canvas.delete(candy)
+            candy_list.remove(candy)
+            update_score_level()
+    window.after(100, check_hits)
 move_direction=0
 
 def check_input(event):
